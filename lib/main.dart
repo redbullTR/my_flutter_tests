@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_flutter_tests/card_lists.dart';
 import 'package:my_flutter_tests/test_applications/clip_path_widget_example.dart';
-import 'package:my_flutter_tests/widget_templates/card_design.dart';
+import 'package:my_flutter_tests/widget_templates/card_design_widget.dart';
+import 'package:my_flutter_tests/widget_templates/flutter_swiper.dart';
 
 void main() {
   runApp(
@@ -41,7 +42,7 @@ class FlutterTestAppMainPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => CardDesign()),
+                          builder: (context) => CardDesignWidget()),
                     );
                   },
                   child: Text("Credit Card Design"),
@@ -56,6 +57,17 @@ class FlutterTestAppMainPage extends StatelessWidget {
                     );
                   },
                   child: Text("Credit Card List"),
+                ),
+
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => FlutterSwiper()),
+                    );
+                  },
+                  child: Text("Flutter Swiper"),
                 ),
               ],
             ),

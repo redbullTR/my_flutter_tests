@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CardDesign extends StatelessWidget {
+class CardDesignWidget extends StatelessWidget {
 
   final String cardNumber;
   final String cardValidDate;
@@ -8,7 +8,7 @@ class CardDesign extends StatelessWidget {
   final List<Color> cardColor;
   final String cardLogo;
 
-  CardDesign({this.cardNumber, this.cardValidDate, this.cardOwn, this.cardColor, this.cardLogo});
+  CardDesignWidget({this.cardNumber, this.cardValidDate, this.cardOwn, this.cardColor, this.cardLogo});
 
   @override
   Widget build(BuildContext context) {
