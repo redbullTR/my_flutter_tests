@@ -14,7 +14,6 @@ class FlutterSwiper extends StatelessWidget {
     cardSwipe.add(CardSwiperModel("12 4500","01/24","Hüseyin ÖZSOY",CardDesignColors().cardColorsBlue,CardDesignColors().cardLogoMasterCard));
     cardSwipe.add(CardSwiperModel("12 4200","01/26","Duru ÖZSOY",CardDesignColors().cardColorsGreen,CardDesignColors().cardLogoMasterCard));
 
-
     return Scaffold(
         appBar: AppBar(
           title: Text("Flutter Swiper"),
@@ -22,11 +21,13 @@ class FlutterSwiper extends StatelessWidget {
         body: Swiper(
           itemBuilder: (BuildContext context, int index) {
             return CardDesignWidget(
-                    cardNumber: cardSwipe[index].cardNumber,
-                    cardValidDate: cardSwipe[index].cardValidDate,
-                    cardOwn: cardSwipe[index].cardOwn,
-                    cardColor: cardSwipe[index].cardColor,
-                    cardLogo: cardSwipe[index].cardLogo);
+                     //cardNumber: RPSCustomPainter().cardColorPaint[1].red,
+                     //cardNumber: cardSwipe[index].cardNumber,
+                    // cardValidDate: cardSwipe[index].cardValidDate,
+                    // cardOwn: cardSwipe[index].cardOwn,
+                    // cardColor: cardSwipe[index].cardColor,
+                    // cardLogo: cardSwipe[index].cardLogo);
+            );
           },
           itemCount: cardSwipe.length,
           viewportFraction: 0.9,
